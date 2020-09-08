@@ -45,9 +45,15 @@ exports.config = {
     ui: 'bdd',
     timeout: 60000
   },
-  reporters: ['browserstack'],
+//   reporters: ['junit'],
+//     reporterOptions: {
+//         browserstack: {
+//             outputDir: './'
+//         }
+//     },
+  reporters: ['junit'],
     reporterOptions: {
-        browserstack: {
+        junit: {
             outputDir: './'
         }
     },
