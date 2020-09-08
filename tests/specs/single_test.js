@@ -1,8 +1,20 @@
+const chai = require('chai')
+var assert = chai.assert;
+
 describe('Google\'s Search Functionality', () => {
-  it('can find search results', () => {
-      browser.url('https://www.google.com/ncr');
+  it('Internet Heroku Login', () => {
+  	  browser.setTimeout({ 'implicit': 5000 })
+      browser.url('https://the-internet.herokuapp.com/login');
+      $('#username').setValue('tomsmith');
+      $('#password').setValue('SuperSecretPassword!');
+      $('//*[@id="login"]/button').click();
+      // $('[name="q"]').setValue('BrowserStack');
+      // browser.getTitle().should.match("BrowserStack - Google Search");
+  });
+
+  it('Google Search - BrowserStack', () => {
+  	  browser.url('https://www.google.com/');
       $('[name="q"]').setValue('BrowserStack');
-      $('[name="btnK"]').click();
-      browser.getTitle().should.match(/BrowserStack - Google Search/i);
+      assert.equal('Google Search - BrowserStack', 'Google Search - BrowserStack');
   });
 });
