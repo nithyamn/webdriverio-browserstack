@@ -15,6 +15,6 @@ describe('Google\'s Search Functionality', () => {
   it('Google Search - BrowserStack', () => {
   	  browser.url('https://www.google.com/');
       $('[name="q"]').setValue('BrowserStack');
-      assert.equal('Google Search - BrowserStack', 'Google Search - BrowserStack');
+      assert.equal('Google Search - BrowserStack', 'Google Search - BrowserStack - error');
   });
 });
