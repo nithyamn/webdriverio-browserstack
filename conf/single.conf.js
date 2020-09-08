@@ -54,7 +54,7 @@ exports.config = {
   reporters: ['junit'],
     reporterOptions: {
         junit: {
-            outputDir: './test-reports/'
+            outputDir: './'
         }
     },
 
