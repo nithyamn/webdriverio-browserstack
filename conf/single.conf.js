@@ -51,12 +51,12 @@ exports.config = {
 //             outputDir: './'
 //         }
 //     },
-  reporters: ['junit'],
-    reporterOptions: {
-        junit: {
-            outputDir: './'
-        }
-    },
+  reporters: ["browserstack"],
+  reporterOptions: {
+    browserstack: {
+      outputDir: "./"
+    }
+  }
 
   beforeSession: function (config, capabilities, specs) {
     var path = specs[0];
