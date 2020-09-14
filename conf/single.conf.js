@@ -56,7 +56,7 @@ exports.config = {
     browserstack: {
       outputDir: "./"
     }
-  }
+  },
 
   beforeSession: function (config, capabilities, specs) {
     var path = specs[0];
