@@ -1,5 +1,5 @@
 var browserstack = require('browserstack-local');
-var browserstackLocalIdentifier = process.env.BROWSERSTACK_LOCAL_IDENTIFIER;
+var browserstackLocalIdentifier = process.env.BROWSERSTACK_LOCAL_IDENTIFIER; //Get local identifier value as an Environment variable from Jenkins.
 
 console.log(process.env.BROWSERSTACK_LOCAL_IDENTIFIER);
 
